@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node src/app.ts",
-    "dev": "ts-node-dev --transpile-only --poll src/app.ts",
+    "dev": "ts-node  src/app.ts",
     "lint": "prettier --write .",
     "build": "tsc -b"
   },
@@ -14,14 +14,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^3.11.0",
+    "@prisma/client": "^3.11.1",
     "argon2": "^0.28.5",
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.2",
     "build": "^0.1.4",
     "consola": "^2.15.3",
     "cors": "^2.8.5",
-    "docker": "^1.0.0",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "jsonwebtoken": "^8.5.1",

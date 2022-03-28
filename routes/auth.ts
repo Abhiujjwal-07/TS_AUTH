@@ -5,7 +5,6 @@ import argon2 from "argon2";
 import { body, validationResult } from "express-validator";
 export const auth = Router();
 const prisma = new PrismaClient();
-
 auth.post("/login", async (req, res) => {
   const { username, password } = req.body;
 
