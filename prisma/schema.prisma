@@ -8,7 +8,29 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 model User {
-  id Int @id @default(autoincrement())
-  username String @unique
+  Employee_id Int @id @default(autoincrement())
+  username String @unique 
   password String
+  Name String 
+  Date_of_birth DateTime
+  Gender String
+  Designation String
+  Home_address String
+  Phone String
+  Employment_start_date DateTime
+  Emp_end_date DateTime
+  Manager String
+  Marital_status String
+  Notice_period String
 }
+
+//YYYY = year
+// MM = month
+// DD = day of month
+// hh = hour (00 through 23)
+// mm = minute
+// ss = second
+// s = one or more digits representing a decimal fraction of a second
+// T denotes the beginning of the time element  
+// Z denotes that the time stamp is given in UTC
+// Example: 1997-07-16T19:20:30.451Z
