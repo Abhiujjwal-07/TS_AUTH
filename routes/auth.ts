@@ -32,6 +32,8 @@ auth.post("/login", async (req, res) => {
   }
 });
 
+auth.post("/user/edit");
+
 auth.post(
   "/register",
   [
@@ -43,7 +45,7 @@ auth.post(
     const errors = validationResult(req); //validte the input
 
     if (!errors.isEmpty()) {
-    //   console.log("errorr ch");
+      //   console.log("errorr ch");
       return res.status(400).json({
         errors: errors.array(),
       });
